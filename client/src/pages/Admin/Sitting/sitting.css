@@ -1,0 +1,11 @@
+.admin-contact > form > input {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  width: 100%;
+  height: 2.9rem;
+  padding: 0.4rem 0.8rem;
+  outline: none;
+  border-radius: 0.3rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+}

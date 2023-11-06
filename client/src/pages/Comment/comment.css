@@ -1,0 +1,102 @@
+.comment1-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(0, 69, 0);
+  padding: 4rem 2rem;
+}
+
+.comment1-wrapper > .comment1-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.comment1-content > h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Croissant One", cursive;
+  text-shadow: -1px 1px 0px rgb(0, 255, 0);
+}
+
+.comment1-content .comments1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+}
+
+.comments1 > .comment1-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.comment1-box > .comment1-icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0.3rem 0.3rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+.comment1-icon > svg {
+  font-size: 3rem;
+  color: green;
+}
+
+.comment1-box > p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ddd;
+  text-align: justify;
+}
+
+.comment1-box > h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Croissant One", cursive;
+}
+
+.comment1-more-btn > button {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgb(0, 70, 0);
+  background-color: #fff;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  transition: 0.2s;
+}
+.comment1-more-btn > button:hover {
+  transform: scale(1.03);
+}
+.comment1-more-btn > button:active {
+  transform: scale(1);
+}
+
+/* -----------All Comments----------- */
+
+.all-comment-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+}
+.all-comment-wrapper > .comment-top-bar {
+  width: 100%;
+  height: 10rem;
+  background-image: url(../../../public/comment.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}

@@ -1,0 +1,124 @@
+.cservice-container {
+  width: 100%;
+  min-height: 80vh;
+  background: #fff;
+}
+.cservice-container > .cs-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-basis: 100%;
+  padding: 4rem 2rem;
+}
+.cs-content-wrapper > .cs-image {
+  flex-basis: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cs-image > img {
+  width: 17rem;
+  transition: 0.5s;
+}
+.cs-image > img:hover {
+  transform: scale(1.1);
+}
+.cs-content-wrapper > .cs-content {
+  flex-basis: 67%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 0rem 2rem;
+}
+.cs-content > h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #01271d;
+}
+.cs-content > h2 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #444;
+}
+.cs-content > h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+}
+.cs-content > p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #444;
+  text-align: justify;
+}
+.cs-content > button {
+  color: #fff;
+  background: #01251c;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.cs-content > button:hover {
+  background: #001b14;
+}
+
+/* -----------Responsiveness-------- */
+@media (max-width: 800px) {
+  .cs-content-wrapper > .cs-image {
+    flex-basis: 100%;
+  }
+  .cs-image > img {
+    width: 19rem;
+  }
+  .cs-content-wrapper > .cs-content {
+    flex-basis: 100%;
+    padding: 0rem 2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cservice-container > .cs-content-wrapper {
+    padding: 4rem 1rem;
+  }
+  .cs-content-wrapper > .cs-image {
+    flex-basis: 100%;
+  }
+  .cs-image > img {
+    width: 17rem;
+  }
+  .cs-content-wrapper > .cs-content {
+    flex-basis: 100%;
+    padding: 0rem 0.5rem;
+    margin-top: 2rem;
+  }
+  .cs-content > h1 {
+    font-size: 2.2rem;
+  }
+  .cs-content > h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #444;
+  }
+}
+@media (max-width: 450px) {
+  .cservice-container > .cs-content-wrapper {
+    padding: 3rem 0.5rem;
+  }
+  .cs-content-wrapper > .cs-image {
+    flex-basis: 100%;
+  }
+  .cs-image > img {
+    width: 15rem;
+  }
+  .cs-content-wrapper > .cs-content {
+    flex-basis: 100%;
+    padding: 0rem 0.5rem;
+    margin-top: 2rem;
+  }
+}

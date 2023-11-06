@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto:wght@300;/400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* font-family: 'Croissant One', cursive; */
+}
+:root {
+  --bg: #fff;
+  --green: #01271d;
+  --black: #000;
+  --lightblack: #444;
+  --darkred: darkred;
+  --orange: orangered;
+  --deepskyblue: deepskyblue;
+  --auth: #111827;
+  --inputbg: #1d2432;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  background: #003326;
+  color: #fff;
+  width: 7rem;
+  height: 2.8rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+  box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+.btn:hover {
+  color: #fff;
+  background: #00523e;
+}
+
+.addbtn {
+  color: orangered;
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 1.6rem;
+  z-index: 1000;
+}
+svg {
+  color: orangered;
+  cursor: pointer;
+}
+
+/* Page Not Found */
+.pagenotFound {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  animation: pnf 1s linear;
+  padding: 0 1rem;
+}
+@keyframes pnf {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.pagenotFound > h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: rgb(0, 68, 51);
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-shadow: -1px 2px 0 rgb(0, 68, 51), -2px 4px 0 #222, -3px 6px 0 #222,
+    -4px 8px 0 #222, -5px 10px 0 #222, -6px 19px 50px #000,
+    -19px 19px 150px #000;
+}
+
+.pagenotFound > h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-shadow: -2px 2px 0 rgb(0, 68, 51), -4px 4px 0 #222, -19px 19px 50px #000;
+}
+.pagenotFound > a {
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(0, 68, 51);
+  cursor: pointer;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+.pagenotFound > a:hover {
+  background: transparent;
+  color: rgb(0, 68, 51);
+  border: 2px solid rgb(0, 68, 51);
+}
+
+@media (max-width: 680px) {
+  .pagenotFound > h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    width: 100%;
+  }
+  .pagenotFound > h3 {
+    text-align: center;
+
+    font-size: 1.2rem;
+  }
+}

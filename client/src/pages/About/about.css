@@ -1,0 +1,38 @@
+.about-container{
+    width: 100vw;
+    min-height: 100vh;
+    background: #fff;
+    padding: 2rem 1rem;
+    overflow-x: hidden;
+}
+.about-container>h1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Croissant One', cursive;
+    text-align: center;
+    color: rgb(2, 29, 2);
+    text-shadow: -1px 1px 0px #999;
+}
+.about-container>.content-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1rem;
+}
+.about-list>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.about-list>ul>li{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(2, 27, 2);
+
+}
+.about-list>ul>li>svg{
+    color: rgb(2, 37, 2);
+    font-size: 1.7rem;
+}

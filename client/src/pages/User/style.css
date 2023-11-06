@@ -1,0 +1,40 @@
+.Profile-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .profile-sidebar {
+    flex: 0 0 15%;
+    min-width: 100px;
+    background: #01271e;
+    border-right: 1px solid #6d6d6d;
+  }
+  .profile-main {
+    flex: 0 0 85%;
+    min-width: 280px;
+    background: #011410;
+    color: #fff;
+  }
+  
+  
+  
+  /* Responsiveness */
+  @media(max-width:700px){
+      .profile-sidebar {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          height: 4rem;
+          background: #000;
+          color: #fff;
+          z-index: 999;
+          border-top-right-radius:.5rem ;
+          border-top-left-radius:.5rem ;
+        }
+        .profile-main {
+          flex: 0 0 100%;
+        }
+  }
+  

@@ -1,0 +1,68 @@
+.admin-user-details {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+}
+.admin-user-details > table {
+  border: 2px solid #fff;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  color: #fff;
+}
+.admin-user-details > table > thead > tr > th {
+  border: 2px solid #ddd;
+  text-align: center;
+  padding: 0.3rem 0.4rem;
+}
+.admin-user-details > table > tbody > tr > td {
+  border: 2px solid #ddd;
+  text-align: center;
+  padding: 0.3rem 0.4rem;
+}
+
+/* -----------Responsive-ness */
+
+@media (max-width: 850px) {
+  .admin-user-details > table {
+    border: none;
+  }
+  .admin-user-details > table > thead {
+    display: none;
+  }
+  .admin-user-details > table,
+  .admin-user-details > table tbody,
+  .admin-user-details > table,
+  .admin-user-details > table tbody tr,
+  .admin-user-details > table tr td {
+    display: block;
+  }
+  .admin-user-details > table > tbody > tr {
+    margin-bottom: 1.5rem;
+  }
+  .admin-user-details table tbody tr td {
+    text-align: right;
+    position: relative;
+    padding-right: 1rem;
+  }
+  .admin-user-details table tbody tr td:nth-child(2) {
+    display: none;
+  }
+  .admin-user-details table tr td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0.5rem;
+    font-weight: 600;
+  }
+  .admin-user-details {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .admin-user-details table tbody tr td {
+    font-size: 0.9rem;
+  }
+  .admin-user-details {
+    padding: 3rem 0.5rem;
+  }
+}

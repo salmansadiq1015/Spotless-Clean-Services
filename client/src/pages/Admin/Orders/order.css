@@ -1,0 +1,53 @@
+.order-wrappers {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.order-wrappers > table {
+  border: 2px solid #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+.order-wrappers > table > thead > tr > th,
+.order-wrappers > table > tbody > tr > td {
+  border: 2px solid #fff;
+  padding: 0.3rem 0.8rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* -----------------Responsiveness------- */
+
+@media (max-width: 1024px) {
+  .order-wrappers > table > thead > tr > th {
+    display: none;
+  }
+  .order-wrappers > table,
+  .order-wrappers > table tbody,
+  .order-wrappers > table tbody tr,
+  .order-wrappers > table tbody tr td {
+    display: block;
+  }
+
+  .order-wrappers > table > tbody > tr > td {
+    position: relative;
+    text-align: right;
+    padding-right: 1rem;
+  }
+  .order-wrappers > table > tbody > tr > td:nth-child(10) {
+    border: none;
+  }
+  .order-wrappers > table > tbody > tr > td svg {
+    float: right;
+    color: red;
+    border: none;
+    cursor: pointer;
+  }
+  .order-wrappers > table > tbody > tr > td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0.5rem;
+    font-weight: 600;
+  }
+}
